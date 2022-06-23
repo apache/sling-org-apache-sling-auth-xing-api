@@ -23,21 +23,19 @@
 
   <parent>
     <groupId>org.apache.sling</groupId>
-    <artifactId>sling</artifactId>
-    <version>26</version>
+    <artifactId>sling-bundle-parent</artifactId>
+    <version>48</version>
     <relativePath/>
   </parent>
 
   <artifactId>org.apache.sling.auth.xing.api</artifactId>
   <version>0.0.3-SNAPSHOT</version>
-  <packaging>bundle</packaging>
 
   <name>Apache Sling Authentication XING API</name>
   <description>Apache Sling Authentication XING API</description>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <project.build.outputTimestamp>1</project.build.outputTimestamp>
   </properties>
 
   <scm>
@@ -51,6 +49,11 @@
     <dependency>
       <groupId>javax.jcr</groupId>
       <artifactId>jcr</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.annotation.versioning</artifactId>
       <scope>provided</scope>
     </dependency>
     <!-- Apache Commons -->
@@ -80,13 +83,6 @@
       <version>2.0.0</version>
       <scope>provided</scope>
     </dependency>
-    <!-- bndlib -->
-    <dependency>
-      <groupId>biz.aQute.bnd</groupId>
-      <artifactId>bndlib</artifactId>
-      <version>2.3.0</version>
-      <scope>provided</scope>
-    </dependency>
     <!-- Gson -->
     <dependency>
       <groupId>com.google.code.gson</groupId>
@@ -109,20 +105,4 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <extensions>true</extensions>
-        <configuration>
-          <instructions>
-            <Bundle-Category>sling</Bundle-Category>
-          </instructions>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
 </project>
