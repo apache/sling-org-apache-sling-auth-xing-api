@@ -20,8 +20,8 @@ package org.apache.sling.auth.xing.api;
 
 import javax.jcr.Credentials;
 
-import aQute.bnd.annotation.ProviderType;
 import org.apache.jackrabbit.api.security.user.User;
+import org.osgi.annotation.versioning.ProviderType;
 
 @ProviderType
 public interface XingUserManager {
