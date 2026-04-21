@@ -104,5 +104,4 @@ public abstract class AbstractXingUserManager implements XingUserManager {
             return null;
         }
     }
-
 }

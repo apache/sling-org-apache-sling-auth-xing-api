@@ -26,8 +26,7 @@ public class XingUser {
 
     private String lastName;
 
-    public XingUser() {
-    }
+    public XingUser() {}
 
     public String getId() {
         return id;
@@ -40,5 +39,4 @@ public class XingUser {
     public String getLastName() {
         return lastName;
     }
-
 }

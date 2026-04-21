@@ -26,11 +26,9 @@ public class Users {
 
     private List<XingUser> users;
 
-    public Users() {
-    }
+    public Users() {}
 
     public List<XingUser> getUsers() {
         return users;
     }
-
 }
