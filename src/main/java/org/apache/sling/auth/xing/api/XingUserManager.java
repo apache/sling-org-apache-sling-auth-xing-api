@@ -35,5 +35,4 @@ public interface XingUserManager {
     User createUser(Credentials credentials);
 
     User updateUser(Credentials credentials);
-
 }
